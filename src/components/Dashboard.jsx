@@ -2,7 +2,7 @@ import { stats } from '../constants'
 import codeImg from "../assets/department_score.png"
 // import pie from "../assets/pie_chart.png"
 import series from "../assets/series.png"
-import bar from "../assets/bar_chart.png"
+// import bar from "../assets/bar_chart.png"
 import boy from "../assets/boy.png"
 import girl from "../assets/girl.png"
 
@@ -28,6 +28,8 @@ import theme from '../theme';
 import PieChartComponent from './PieChartComponent';
 
 // import {PieChartComponent} from './PieChartComponent'
+
+import ChartsOverviewDemo from '../screen/ChartsOverviewDemo'
 
 
 const Dashboard = () => {
@@ -104,11 +106,8 @@ const Dashboard = () => {
           <p>NO OF PUBLIC CONCERNED REPORTED VS RESOLVED</p>
           <div className='flex items-center flex-wrap'>
             <div className="p-2 w-full">
-            <ThemeProvider theme={theme}>
-      <CssBaseline />
-      {/* <ChartComponent /> */}
-    </ThemeProvider>
-                <img src={bar} type="img/jpg" alt="Code" />
+            <ChartsOverviewDemo/>
+                {/* <img src={bar} type="img/jpg" alt="Code" /> */}
             </div>
           </div>
         </div>
