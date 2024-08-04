@@ -1,6 +1,6 @@
 import { stats } from '../constants'
 import codeImg from "../assets/department_score.png"
-import pie from "../assets/pie_chart.png"
+// import pie from "../assets/pie_chart.png"
 import series from "../assets/series.png"
 import bar from "../assets/bar_chart.png"
 import boy from "../assets/boy.png"
@@ -11,9 +11,23 @@ import girl from "../assets/girl.png"
 // import '@fontsource/roboto/500.css';
 // import '@fontsource/roboto/700.css';
 
-import { PieChart } from '@mui/x-charts/PieChart';
+// import { PieChart } from '@mui/x-charts/PieChart';
 
 // import {ButtonUsage} from ''
+
+// import React from 'react';
+// import { ThemeProvider } from '@mui/material/styles';
+// import CssBaseline from '@mui/material/CssBaseline';
+// import theme from '../theme';
+// // import ChartComponent from './components/ChartComponent';
+
+import React from 'react';
+import { ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import theme from '../theme';
+import PieChartComponent from './PieChartComponent';
+
+// import {PieChartComponent} from './PieChartComponent'
 
 
 const Dashboard = () => {
@@ -57,7 +71,11 @@ const Dashboard = () => {
                 <img src={codeImg} type="img/jpg" alt="Code" />
             </div>
             <div className="p-2 w-full lg:w-1/3">
-              
+
+            <ThemeProvider theme={theme}>
+              <CssBaseline />
+              <PieChartComponent />
+          </ThemeProvider>
 
               {/* <PieChart
                 series={[
@@ -74,7 +92,7 @@ const Dashboard = () => {
                 }
                 ]}
               /> */}
-                <img src={pie} type="img/jpg" alt="Code" />
+                {/* <img src={pie} type="img/jpg" alt="Code" /> */}
             </div>
             <div className="w-full p-2 lg:w-1/12">
                 <img src={series} type="img/jpg" alt="Code" />
@@ -86,6 +104,10 @@ const Dashboard = () => {
           <p>NO OF PUBLIC CONCERNED REPORTED VS RESOLVED</p>
           <div className='flex items-center flex-wrap'>
             <div className="p-2 w-full">
+            <ThemeProvider theme={theme}>
+      <CssBaseline />
+      {/* <ChartComponent /> */}
+    </ThemeProvider>
                 <img src={bar} type="img/jpg" alt="Code" />
             </div>
           </div>
