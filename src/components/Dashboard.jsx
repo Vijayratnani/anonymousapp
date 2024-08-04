@@ -27,7 +27,7 @@ import PieChartComponent from './PieChartComponent';
 
 // import {PieChartComponent} from './PieChartComponent'
 
-import ChartsOverviewDemo from '../screen/ChartsOverviewDemo'
+import ChartsOverviewDemo from './ChartsOverviewDemo'
 
 
 const Dashboard = () => {
