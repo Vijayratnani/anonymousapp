@@ -1,8 +1,6 @@
 import { stats } from '../constants'
 import codeImg from "../assets/department_score.png"
-// import pie from "../assets/pie_chart.png"
 import series from "../assets/series.png"
-// import bar from "../assets/bar_chart.png"
 import boy from "../assets/boy.png"
 import girl from "../assets/girl.png"
 
@@ -36,7 +34,6 @@ const Dashboard = () => {
   return (
     
     <div className="w-3/4 border-l border-neutral-400/80 hover:border-neutral-700">
-      {/* <ButtonUsage/> */}
       <div className="max-w-6xl mx-auto mt-10 px-6">
         <div className='flex justify-between mb-2 pb-2 border-b border-neutral-500 '>
           <h5 className="text-xl  tracking-wide">
@@ -78,23 +75,6 @@ const Dashboard = () => {
               <CssBaseline />
               <PieChartComponent />
           </ThemeProvider>
-
-              {/* <PieChart
-                series={[
-                {
-                  data: ["vijay" ],
-                  innerRadius: 30,
-                  outerRadius: 100,
-                  paddingAngle: 5,
-                  cornerRadius: 5,
-                  startAngle: -90,
-                  endAngle: 180,
-                  cx: 150,
-                  cy: 150,
-                }
-                ]}
-              /> */}
-                {/* <img src={pie} type="img/jpg" alt="Code" /> */}
             </div>
             <div className="w-full p-2 lg:w-1/12">
                 <img src={series} type="img/jpg" alt="Code" />
@@ -107,7 +87,6 @@ const Dashboard = () => {
           <div className='flex items-center flex-wrap'>
             <div className="p-2 w-full">
             <ChartsOverviewDemo/>
-                {/* <img src={bar} type="img/jpg" alt="Code" /> */}
             </div>
           </div>
         </div>
@@ -130,4 +109,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default Dashboard;
