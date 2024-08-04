@@ -27,7 +27,7 @@ import PieChartComponent from './PieChartComponent';
 
 // import {PieChartComponent} from './PieChartComponent'
 
-import ChartsOverviewDemo from './ChartsOverviewDemo'
+import BarChartComponent from './BarChartComponent'
 
 
 const Dashboard = () => {
@@ -86,7 +86,7 @@ const Dashboard = () => {
           <p>NO OF PUBLIC CONCERNED REPORTED VS RESOLVED</p>
           <div className='flex items-center flex-wrap'>
             <div className="p-2 w-full">
-            <ChartsOverviewDemo/>
+            <BarChartComponent/>
             </div>
           </div>
         </div>
