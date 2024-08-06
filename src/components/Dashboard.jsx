@@ -76,13 +76,14 @@ const Dashboard = () => {
         <div>
           <h5 className='text-xl'>GENDER RATIO</h5>
           <p>NO OF MALE AND FEMALE USING THIS APPLICATION</p>
-          <div className='flex items-center justify-center flex-wrap'>
-            <div className="p-2 w-full lg:w-1/2 ">
-                <img src={boy} type="img/jpg" alt="Code" className='h-inherit border-r border-dashed border-neutral-500'/>
+          <div className='flex items-center justify-center flex-wrap h-auto'>
+            <div className="p-2 w-full lg:w-1/2 bg-cover bg-center h-screen bg_img">
+                <img src={boy} type="img/jpg" alt="Code" className='h-full border-r border-dashed border-neutral-500'/>
                 <p className='text-center mt-5'>12000 MALE STUDENT</p>
             </div>
-            <div className="p-2 w-full lg:w-1/2">
-                <img src={girl} type="img/jpg" alt="Code" />
+            <div className="p-2 w-full lg:w-1/2 bg-cover bg-center h-screen background_image2" > 
+        
+                <img src={girl} type="img/jpg" alt="Code" className=' h-full'/>
                 <p className='text-center  mt-5'>1000 FEMALE STUDENT</p>
             </div>
           </div>
