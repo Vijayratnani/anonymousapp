@@ -19,23 +19,23 @@ const Navbar = () =>{
             <div className="flex justify-between items-center">
                 <div className="flex items-center flex-shrink-0">
                     <div className="flex items-center flex-shrink-0">
-                        <img className="h-14 w-14 mr-2" src={logo} alt="" srcset="" />
+                        <img className="h-14 w-14 mr-2" src={logo} alt="" srcSet="" />
                         <span className="text-2xl tracking-tight">
                             ANONYMOUS APP
                         </span>
                     </div>
-                    <img className="rounded-full h-16 w-16 m-2" src={uit} alt="" srcset="" />
+                    <img className="rounded-full h-16 w-16 m-2" src={uit} alt="" srcSet="" />
                 </div>
                 <div className="flex items-center flex-shrink-0">
                     <div className="flex mx-3">
-                        <img className="h-10 w-10 mr-2" src={notification} alt="" srcset="" />
-                        <img className="h-10 w-10 mr-2" src={announcement} alt="" srcset="" />
+                        <img className="h-10 w-10 mr-2" src={notification} alt="" srcSet="" />
+                        <img className="h-10 w-10 mr-2" src={announcement} alt="" srcSet="" />
                     </div>
                     <div className="mx-2">
                         <div>Vijay Kumar</div>
                         <div>21F-BSCS-30</div>
                     </div>
-                    <img className=" rounded-full h-14 w-14 mr-2" src={vijay} alt="" srcset="" />
+                    <img className=" rounded-full h-14 w-14 mr-2" src={vijay} alt="" srcSet="" />
                 </div>
                     {/* <ul className="hidden lg:flex ml-14 space-x-12">
                         {navItems.map((item,index)=>(

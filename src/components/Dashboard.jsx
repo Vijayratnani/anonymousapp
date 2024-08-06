@@ -1,6 +1,4 @@
 import { stats } from '../constants'
-import codeImg from "../assets/department_score.png"
-import series from "../assets/series.png"
 import boy from "../assets/boy.png"
 import girl from "../assets/girl.png"
 
@@ -29,6 +27,8 @@ import PieChartComponent from './PieChartComponent';
 
 import BarChartComponent from './BarChartComponent'
 
+
+import LeadershipBoard from './LeadershipBoard'
 
 const Dashboard = () => {
   return (
@@ -67,18 +67,19 @@ const Dashboard = () => {
           <p>WHICH DEPARTMENT HAVE BEST PERFORMANCE OVERALL</p>
           <div className='flex items-center flex-wrap'>
             <div className="p-2 w-full lg:w-1/2">
-                <img src={codeImg} type="img/jpg" alt="Code" />
+            <LeadershipBoard/>
+                
             </div>
-            <div className="p-2 w-full lg:w-1/3">
+            <div className="p-2 w-full lg:w-1/2">
 
             <ThemeProvider theme={theme}>
               <CssBaseline />
               <PieChartComponent />
           </ThemeProvider>
             </div>
-            <div className="w-full p-2 lg:w-1/12">
-                <img src={series} type="img/jpg" alt="Code" />
-            </div>
+            {/* <div className="w-full p-2 lg:w-1/12">
+                 Series Component Can be added 
+            </div> */}
           </div>
         </div>
         <div>

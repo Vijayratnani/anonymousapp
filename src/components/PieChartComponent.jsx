@@ -8,18 +8,20 @@ const PieChartComponent = () => {
     { name: 'Group A', value: 400 },
     { name: 'Group B', value: 300 },
     { name: 'Group C', value: 300 },
-    { name: 'Group D', value: 200 }
+    { name: 'Group D', value: 200 },
+    { name: 'Group E', value: 100 },
+    { name: 'Group F', value: 50 },
+    { name: 'Group G', value: 25 }
   ];
 
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4, width: 600, height: 400 }}>
-      <Card sx={{ width: '100%', height: '100%' }}>
+    <Box sx={{ display: 'flex', justifyContent: 'center', width: 400, height: 400 }}>
+      <Card sx={{ width: '100%', height: '100%',  boxShadow:'none' }}>
         <CardContent>
-          <Typography variant="h5" component="div">
-            Pie Chart Example
-          </Typography>
-          <Box sx={{ width: '100%', height: 300 }}> {/* Set height for PieChart container */}
-            <PieChart
+          <Box sx={{ width: '100%', height: 400, boxShadow:'none', fontSize:20, justifyContent: 'center',
+            alignItems:'center'
+           }}> 
+            <PieChart 
               series={[
                 {
                   data: data,
@@ -35,8 +37,8 @@ const PieChartComponent = () => {
               ]}
             />
           </Box>
-        </CardContent>
-      </Card>
+         </CardContent>
+       </Card>
     </Box>
   );
 };

@@ -21,6 +21,13 @@ import private_concern from "../assets/private_concern.png"
 import public_concern from "../assets/public_concern.png"
 import concern_around from "../assets/concern_around.png"
 
+import lead1 from "../assets/lead1.jpg";
+import lead2 from "../assets/lead2.jpg";
+import lead3 from "../assets/lead3.jpg";
+import lead4 from "../assets/lead4.jpg";
+import lead5 from "../assets/lead5.jpg";
+import lead6 from "../assets/lead6.jpg";
+
 export const sidebarInfo = [
       {
         icon: dashboard,
@@ -77,4 +84,38 @@ export const stats =[
     number:254,
     text: "CONCERN AROUND UNIVERSITY"
   },
+];
+
+export const leadsInfo = [
+  {
+    icon: lead1,
+    title: "DASHBOARD",
+    text: "SHOW ALL THE RELAVANT INFORMATION",
+  },
+  {
+    icon: lead2,
+    title: "DASHBOARD",
+    text: "Show all the relevent information",
+  },
+  {
+    icon: lead3,
+    title: "PRIVATE ",
+    text: "YOUR PERSONAL PROBLEM NOT VISIBLE TO ANYONE ELSE",
+  },
+  {
+    icon: lead4,
+    title: "CREATE CONCERN",
+    text: "CREATE YOUR PRIVATE CONCERN OR PUBLIC VOICE",
+  },
+  {
+    icon: lead5,
+    title: "MY PUBLIC VOICE",
+    text: "PUBLIC VOICE YOU CAN CREATE WHILE REMAIN ANONYMOUS",
+  },
+  {
+    icon: lead6,
+    title: "MY PUBLIC VOICE",
+    text: "PUBLIC VOICE YOU CAN CREATE WHILE REMAIN ANONYMOUS",
+  },
+  
 ];
