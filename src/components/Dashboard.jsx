@@ -15,7 +15,7 @@ import LeadershipBoard from './LeadershipBoard'
 const Dashboard = () => {
   return (
     
-    <div className="w-3/4 border-l border-neutral-400/80 hover:border-neutral-700">
+    <div className="w-3/4 ml-96 border-l border-neutral-400/80 hover:border-neutral-700">
       <div className="max-w-6xl mx-auto mt-10 px-6">
         <div className='flex justify-between mb-2 pb-2 border-b border-neutral-500 '>
           <h5 className="text-xl  tracking-wide">
@@ -25,7 +25,7 @@ const Dashboard = () => {
             </span>
           </h5>
             <h5 className="text-xl  tracking-wide">
-              DASHBOARD
+              DASHBOARDQ
             </h5>
         </div>
         <div>
@@ -34,9 +34,8 @@ const Dashboard = () => {
             {stats.map((val,index)=>(
               <div key={index} className="flex items-center w-1/3 p-5 m-5
               bg-gradient-to-r from-blue-400 to-blue-600">
-                <img src={val.icon} type="img/png" className="w-24 h-auto bg-neutral-400 rounded-full"/>
-                <div className="ml-5 bg-gradient-to-l from-neutral-100 to-blue-950 text-transparent 
-                bg-clip-text">
+                <img src={val.icon} type="img/png" className="w-36 h-auto p-7 bg-neutral-400 rounded-full"/>
+                <div className="ml-5 text-neutral-50">
                   <h2 className="text-xl ">{val.number}</h2>
                   <p>{val.text}</p>
                 </div>
@@ -44,7 +43,7 @@ const Dashboard = () => {
             ))}
           </div>
         </div>
-        <div>
+        <div className='mt-10'>
           <h5 className='text-xl'>LEADERSHIP BOARD</h5>
           <p>WHICH DEPARTMENT HAVE BEST PERFORMANCE OVERALL</p>
           <div className='flex items-center flex-wrap'>
@@ -64,27 +63,27 @@ const Dashboard = () => {
             </div> */}
           </div>
         </div>
-        <div>
+        <div className='mt-10'>
           <h5 className='text-xl'>PERFORMANCE MATRIC</h5>
           <p>NO OF PUBLIC CONCERNED REPORTED VS RESOLVED</p>
           <div className='flex items-center flex-wrap'>
-            <div className="p-2 w-full">
+            <div className="p-2 mt-2 w-full">
             <BarChartComponent/>
             </div>
           </div>
         </div>
-        <div>
+        <div className='mt-10 mb-10'>
           <h5 className='text-xl'>GENDER RATIO</h5>
           <p>NO OF MALE AND FEMALE USING THIS APPLICATION</p>
           <div className='flex items-center justify-center flex-wrap h-auto'>
             <div className="p-2 w-full lg:w-1/2 bg-cover bg-center h-screen bg_img">
                 <img src={boy} type="img/jpg" alt="Code" className='h-full border-r border-dashed border-neutral-500'/>
-                <p className='text-center mt-5'>12000 MALE STUDENT</p>
+                <p className='text-center m-5 mb-10'>12000 MALE STUDENT</p>
             </div>
             <div className="p-2 w-full lg:w-1/2 bg-cover bg-center h-screen background_image2" > 
         
                 <img src={girl} type="img/jpg" alt="Code" className=' h-full'/>
-                <p className='text-center  mt-5'>1000 FEMALE STUDENT</p>
+                <p className='text-center  m-5'>1000 FEMALE STUDENT</p>
             </div>
           </div>
         </div>
