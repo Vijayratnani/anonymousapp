@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <><div className='text-customGrey'>
     <Navbar/>
-    <div className="flex font-Julius">
+    <div className="flex ">
       <Sidebar className='position'/>
       <Dashboard/>
     </div>
