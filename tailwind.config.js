@@ -10,6 +10,9 @@ export default {
         customBlue: '#0850A4',
         customGrey: '#5F5F5F',
         customBlue2: '#0850A4'
+      },
+      fontFamily:{
+        Julius:"Julius Sans One"
       }
     },
   },
