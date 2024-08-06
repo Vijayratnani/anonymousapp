@@ -89,32 +89,32 @@ export const stats =[
 export const leadsInfo = [
   {
     icon: lead1,
-    title: "DASHBOARD",
+    title: "DR. Samreen Hussain",
     text: "Current score: 65",
   },
   {
     icon: lead2,
-    title: "DASHBOARD",
+    title: "Dr. Sarwat Iqbal",
     text: "Current score: 60",
   },
   {
     icon: lead3,
-    title: "PRIVATE ",
+    title: "Dr. Fida Hussain Chandio",
     text: "Current score: 60",
   },
   {
     icon: lead4,
-    title: "CREATE CONCERN",
+    title: "Dr. Amir Iqbal",
     text: "Current score: 60",
   },
   {
     icon: lead5,
-    title: "MY PUBLIC VOICE",
+    title: "Preesa Abbasi",
     text: "Current score: 55",
   },
   {
     icon: lead6,
-    title: "MY PUBLIC VOICE",
+    title: "Huirara Sahid",
     text: "Current score: 20",
   },
   
