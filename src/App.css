@@ -1,9 +1,11 @@
 .bg_img{
-    background-image: url({boy});
+    background-image: url({male});
+    height: 70%;
 }
 
 .background_image2{
-    background-image: url({girl});
+    background-image: url({female});
+    height: 70%;
 }
 
 .blue{

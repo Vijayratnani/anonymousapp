@@ -1,6 +1,6 @@
 import { stats } from '../constants'
-import boy from "../assets/boy.png"
-import girl from "../assets/girl.png"
+import male from "../assets/male.jpg"
+import female from "../assets/female.jpg"
 
 import React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
@@ -11,6 +11,7 @@ import PieChartComponent from './PieChartComponent';
 import BarChartComponent from './BarChartComponent'
 
 import LeadershipBoard from './LeadershipBoard'
+import { Height } from '@mui/icons-material';
 
 const Dashboard = () => {
   return (
@@ -73,14 +74,14 @@ const Dashboard = () => {
         <div className='mt-10 mb-10'>
           <h5 className='text-xl'>GENDER RATIO</h5>
           <p>NO OF MALE AND FEMALE USING THIS APPLICATION</p>
-          <div className='flex items-center justify-center flex-wrap h-auto'>
-            <div className="p-2 w-full lg:w-1/2 bg-cover bg-center h-screen bg_img">
-                <img src={boy} type="img/jpg" alt="Code" className='h-full border-r border-dashed border-neutral-500'/>
+          <div className='flex items-center justify-center flex-wrap h-4/5'>
+            <div className="p-2 w-full lg:w-1/2 bg-cover bg-center h-1/3 ">
+                <img src={male} type="img/jpg" alt="Code" style={{Height:'50%'}} sx={{ height: '50%' }} className='border-r border-dashed border-neutral-500'/>
                 <p className='text-center m-5 mb-10'>12000 MALE STUDENT</p>
             </div>
-            <div className="p-2 w-full lg:w-1/2 bg-cover bg-center h-screen background_image2" > 
+            <div className="p-2 w-full lg:w-1/2 bg-cover bg-center h-auto" > 
         
-                <img src={girl} type="img/jpg" alt="Code" className=' h-full'/>
+                <img src={female} type="img/jpg" alt="Code" className=' h-3/4'/>
                 <p className='text-center  m-5'>1000 FEMALE STUDENT</p>
             </div>
           </div>
