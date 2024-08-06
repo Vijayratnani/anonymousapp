@@ -17,12 +17,12 @@ const Dashboard = () => {
     
     <div className="w-3/4 ml-96 border-l  border-neutral-400/80 hover:border-neutral-700">
       <div className="max-w-6xl mx-auto mt-10 px-6">
-        <div className='flex text-2xl justify-between  mb-2 pb-2 border-b border-neutral-500 '>
-          <h5 className="  tracking-wide ">
+        <div className='flex  justify-between  mb-2 pb-2 border-b border-neutral-500 '>
+          <h5 className="text-2xl tracking-wide ">
             WELCOME
             VIJAY KUMAR
           </h5>
-            <h5 className="  tracking-wide">
+            <h5 className="text-xl tracking-wide">
               DASHBOARD
             </h5>
         </div>

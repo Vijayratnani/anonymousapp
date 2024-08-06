@@ -28,14 +28,14 @@ const Navbar = () =>{
                 </div>
                 <div className="flex items-center flex-shrink-0">
                     <div className="flex mx-3">
-                        <img className="h-10 w-10 mr-2" src={notification} alt="" srcSet="" />
-                        <img className="h-10 w-10 mr-2" src={announcement} alt="" srcSet="" />
+                        <img className="h-12 w-12 mr-2" src={notification} alt="" srcSet="" />
+                        <img className="h-12 w-12 mr-2" src={announcement} alt="" srcSet="" />
                     </div>
-                    <div className="mx-2">
+                    <div className="mx-2 text-xl">
                         <div>Vijay Kumar</div>
                         <div>21F-BSCS-30</div>
                     </div>
-                    <img className=" rounded-full h-14 w-14 mr-2" src={vijay} alt="" srcSet="" />
+                    <img className="rounded-full h-20 w-20 mr-2" src={vijay} alt="" srcSet="" />
                 </div>
                     {/* <ul className="hidden lg:flex ml-14 space-x-12">
                         {navItems.map((item,index)=>(
