@@ -2,31 +2,13 @@ import { stats } from '../constants'
 import boy from "../assets/boy.png"
 import girl from "../assets/girl.png"
 
-// import '@fontsource/roboto/300.css';
-// import '@fontsource/roboto/400.css';
-// import '@fontsource/roboto/500.css';
-// import '@fontsource/roboto/700.css';
-
-// import { PieChart } from '@mui/x-charts/PieChart';
-
-// import {ButtonUsage} from ''
-
-// import React from 'react';
-// import { ThemeProvider } from '@mui/material/styles';
-// import CssBaseline from '@mui/material/CssBaseline';
-// import theme from '../theme';
-// // import ChartComponent from './components/ChartComponent';
-
 import React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import theme from '../theme';
 import PieChartComponent from './PieChartComponent';
 
-// import {PieChartComponent} from './PieChartComponent'
-
 import BarChartComponent from './BarChartComponent'
-
 
 import LeadershipBoard from './LeadershipBoard'
 
@@ -95,13 +77,13 @@ const Dashboard = () => {
           <h5 className='text-xl'>GENDER RATIO</h5>
           <p>NO OF MALE AND FEMALE USING THIS APPLICATION</p>
           <div className='flex items-center justify-center flex-wrap'>
-            <div className="p-2 w-full lg:w-1/2 border-r border-dashed border-neutral-500">
-                <img src={boy} type="img/jpg" alt="Code" className=''/>
-                <p className='text-center'>12000 MALE STUDENT</p>
+            <div className="p-2 w-full lg:w-1/2 ">
+                <img src={boy} type="img/jpg" alt="Code" className='h-inherit border-r border-dashed border-neutral-500'/>
+                <p className='text-center mt-5'>12000 MALE STUDENT</p>
             </div>
             <div className="p-2 w-full lg:w-1/2">
                 <img src={girl} type="img/jpg" alt="Code" />
-                <p className='text-center'>1000 FEMALE STUDENT</p>
+                <p className='text-center  mt-5'>1000 FEMALE STUDENT</p>
             </div>
           </div>
         </div>
