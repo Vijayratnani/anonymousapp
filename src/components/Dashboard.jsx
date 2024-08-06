@@ -15,28 +15,26 @@ import LeadershipBoard from './LeadershipBoard'
 const Dashboard = () => {
   return (
     
-    <div className="w-3/4 ml-96 border-l border-neutral-400/80 hover:border-neutral-700">
+    <div className="w-3/4 ml-96 border-l  border-neutral-400/80 hover:border-neutral-700">
       <div className="max-w-6xl mx-auto mt-10 px-6">
-        <div className='flex justify-between mb-2 pb-2 border-b border-neutral-500 '>
-          <h5 className="text-xl  tracking-wide">
+        <div className='flex text-2xl justify-between  mb-2 pb-2 border-b border-neutral-500 '>
+          <h5 className="  tracking-wide ">
             WELCOME
-            <span className="bg-gradient-to-r from-blue-500 to-blue-800 text-transparent bg-clip-text">
-              {" "}VIJAY KUMAR
-            </span>
+            VIJAY KUMAR
           </h5>
-            <h5 className="text-xl  tracking-wide">
-              DASHBOARDQ
+            <h5 className="  tracking-wide">
+              DASHBOARD
             </h5>
         </div>
         <div>
-          <h5>YOUR CONCERN STATS</h5>
+          <h5 className='text-xl'>YOUR CONCERN STATS</h5>
           <div className="flex ">
             {stats.map((val,index)=>(
               <div key={index} className="flex items-center w-1/3 p-5 m-5
-              bg-gradient-to-r from-blue-400 to-blue-600">
+              bg-customBlue2 bg-opacity-65">
                 <img src={val.icon} type="img/png" className="w-36 h-auto p-7 bg-neutral-400 rounded-full"/>
                 <div className="ml-5 text-neutral-50">
-                  <h2 className="text-xl ">{val.number}</h2>
+                  <h2 className="text-3xl ">{val.number}</h2>
                   <p>{val.text}</p>
                 </div>
               </div>
@@ -53,10 +51,10 @@ const Dashboard = () => {
             </div>
             <div className="p-2 w-full lg:w-1/2">
 
-            <ThemeProvider theme={theme}>
-              <CssBaseline />
-              <PieChartComponent />
-          </ThemeProvider>
+              <ThemeProvider theme={theme}>
+                <CssBaseline />
+                <PieChartComponent />
+              </ThemeProvider>
             </div>
             {/* <div className="w-full p-2 lg:w-1/12">
                  Series Component Can be added 

@@ -4,11 +4,12 @@ import Dashboard from '../components/Dashboard'
 
 const Main = () => {
   return (
-    <>
+    <><div className='text-customGrey'>
     <Navbar/>
     <div className="flex">
       <Sidebar className='position'/>
       <Dashboard/>
+    </div>
     </div>
     </>
   )
