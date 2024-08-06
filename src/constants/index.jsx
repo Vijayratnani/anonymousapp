@@ -90,32 +90,32 @@ export const leadsInfo = [
   {
     icon: lead1,
     title: "DASHBOARD",
-    text: "SHOW ALL THE RELAVANT INFORMATION",
+    text: "Current score: 65",
   },
   {
     icon: lead2,
     title: "DASHBOARD",
-    text: "Show all the relevent information",
+    text: "Current score: 60",
   },
   {
     icon: lead3,
     title: "PRIVATE ",
-    text: "YOUR PERSONAL PROBLEM NOT VISIBLE TO ANYONE ELSE",
+    text: "Current score: 60",
   },
   {
     icon: lead4,
     title: "CREATE CONCERN",
-    text: "CREATE YOUR PRIVATE CONCERN OR PUBLIC VOICE",
+    text: "Current score: 60",
   },
   {
     icon: lead5,
     title: "MY PUBLIC VOICE",
-    text: "PUBLIC VOICE YOU CAN CREATE WHILE REMAIN ANONYMOUS",
+    text: "Current score: 55",
   },
   {
     icon: lead6,
     title: "MY PUBLIC VOICE",
-    text: "PUBLIC VOICE YOU CAN CREATE WHILE REMAIN ANONYMOUS",
+    text: "Current score: 20",
   },
   
 ];
