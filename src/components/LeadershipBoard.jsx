@@ -8,7 +8,7 @@ const LeadershipBoard = () => {
         hover:border-neutral-700 p-5 hover:bg-neutral-200">
           <img src={lead.icon} type="img/png" className="w-10 h-10 rounded-full"/>
           <div className="ml-5">
-            <h2 className="text-md bg-gradient-to-r from-blue-500 to-blue-950 text-transparent 
+            <h2 className="text-md bg-gradient-to-r from-blue-500 to-blue-800 text-transparent 
             bg-clip-text">{lead.title}</h2>
             <p className='text-sm'>{lead.text}</p>
         </div>
