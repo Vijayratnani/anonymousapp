@@ -11,7 +11,6 @@ import PieChartComponent from './PieChartComponent';
 import BarChartComponent from './BarChartComponent'
 
 import LeadershipBoard from './LeadershipBoard'
-import { Height } from '@mui/icons-material';
 
 const Dashboard = () => {
   return (
@@ -34,7 +33,7 @@ const Dashboard = () => {
               <div key={index} className="flex items-center w-1/3 p-5 m-5
               bg-customBlue2 bg-opacity-65">
                 <img src={val.icon} type="img/png" className="w-36 h-auto p-7 bg-neutral-400 rounded-full"/>
-                <div className="ml-5 text-neutral-50">
+                <div className="ml-5 text-neutral-50 pr-5">
                   <h2 className="text-3xl ">{val.number}</h2>
                   <p>{val.text}</p>
                 </div>
