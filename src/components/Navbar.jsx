@@ -19,12 +19,12 @@ const Navbar = () =>{
             <div className="flex justify-between items-center">
                 <div className="flex items-center flex-shrink-0">
                     <div className="flex items-center flex-shrink-0">
-                        <img className="h-14 w-14 mr-2" src={logo} alt="" srcSet="" />
-                        <span className="text-2xl tracking-tight">
-                            ANONYMOUS APP
+                        <img className="h-20 w-20 mr-2" src={logo} alt="" srcSet="" />
+                        <span className="text-4xl tracking-tight font-medium">
+                            ANONYMOUS <div>APP</div>
                         </span>
                     </div>
-                    <img className="rounded-full h-16 w-16 m-2" src={uit} alt="" srcSet="" />
+                    <img className="rounded-full h-20 w-20 m-2 ml-10" src={uit} alt="" srcSet="" />
                 </div>
                 <div className="flex items-center flex-shrink-0">
                     <div className="flex mx-3">
