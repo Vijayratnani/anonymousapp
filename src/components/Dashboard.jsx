@@ -15,9 +15,9 @@ import LeadershipBoard from './LeadershipBoard'
 const Dashboard = () => {
   return (
     
-    <div className="w-3/4 ml-96 border-l  border-neutral-400/80 hover:border-neutral-700">
+    <div className="w-3/4 sm:w-full ml-0 2xl:ml-96 border-l border-neutral-400/80 hover:border-neutral-700">
       <div className="max-w-6xl mx-auto mt-10 px-6">
-        <div className='flex  justify-between  mb-2 pb-2 border-b border-neutral-500 '>
+        <div className='flex sm: sm:mx-auto justify-between mb-2 pb-2 border-b border-neutral-500 '>
           <h5 className="text-2xl tracking-wide ">
             WELCOME
             VIJAY KUMAR
@@ -28,11 +28,11 @@ const Dashboard = () => {
         </div>
         <div>
           <h5 className='text-xl'>YOUR CONCERN STATS</h5>
-          <div className="flex ">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
             {stats.map((val,index)=>(
-              <div key={index} className="flex items-center w-1/3 p-5 m-5
-              bg-customBlue2 bg-opacity-65">
-                <img src={val.icon} type="img/png" className="w-36 h-auto p-7 bg-neutral-400 rounded-full"/>
+              <div key={index} className="flex items-center p-5 m-2 lg:m-5 sm:w-11/12 sm:mr-96
+              bg-customBlue bg-opacity-65">
+                <img src={val.icon} type="img/png" className="w-36 h-auto p-6 bg-neutral-400 rounded-full"/>
                 <div className="ml-5 text-neutral-50 pr-5">
                   <h2 className="text-3xl ">{val.number}</h2>
                   <p>{val.text}</p>
@@ -45,11 +45,11 @@ const Dashboard = () => {
           <h5 className='text-xl'>LEADERSHIP BOARD</h5>
           <p>WHICH DEPARTMENT HAVE BEST PERFORMANCE OVERALL</p>
           <div className='flex items-center flex-wrap'>
-            <div className="p-2 w-full lg:w-1/2">
+            <div className="p-2 w-full lg:w-1/2 xl:w-fit">
             <LeadershipBoard/>
                 
             </div>
-            <div className="p-2 w-full lg:w-1/2">
+            <div className="p-2 w-11/12 lg:w-1/2">
 
               <ThemeProvider theme={theme}>
                 <CssBaseline />
@@ -65,7 +65,7 @@ const Dashboard = () => {
           <h5 className='text-xl'>PERFORMANCE MATRIC</h5>
           <p>NO OF PUBLIC CONCERNED REPORTED VS RESOLVED</p>
           <div className='flex items-center flex-wrap'>
-            <div className="p-2 mt-2 w-full">
+            <div className="p-2 mt-2 h-fit w-11/12">
             <BarChartComponent/>
             </div>
           </div>
@@ -75,12 +75,13 @@ const Dashboard = () => {
           <p>NO OF MALE AND FEMALE USING THIS APPLICATION</p>
           <div className='flex items-center justify-center flex-wrap h-4/5'>
             <div className="p-2 w-full lg:w-1/2 bg-cover bg-center h-1/3 ">
-                <img src={male} type="img/jpg" alt="Code" style={{Height:'50%'}} sx={{ height: '50%' }} className='border-r border-dashed border-neutral-500'/>
+                <img src={male} type="img/jpg" alt="Code" className='h-auto w-full border-none
+                border-r lg:border-dashed border-neutral-500 '/>
                 <p className='text-center m-5 mb-10'>12000 MALE STUDENT</p>
             </div>
             <div className="p-2 w-full lg:w-1/2 bg-cover bg-center h-auto" > 
         
-                <img src={female} type="img/jpg" alt="Code" className=' h-3/4'/>
+                <img src={female} type="img/jpg" alt="Code" className='h-auto w-full'/>
                 <p className='text-center  m-5'>1000 FEMALE STUDENT</p>
             </div>
           </div>

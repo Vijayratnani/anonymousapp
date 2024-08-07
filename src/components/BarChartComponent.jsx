@@ -9,7 +9,7 @@ export default function ChartsOverviewDemo() {
         { data: [51, 6, 49, 30] },
         { data: [0, 0, 0, 0]}
       ]}
-      height={400}
+      height={300}
       xAxis={[{ data: ['Q1', 'Q2', 'Q3', 'Q4'], scaleType: 'band' }]}
       margin={{ top: 10, bottom: 30, left: 40, right: 10 }}
     />

@@ -14,9 +14,9 @@ const PieChartComponent = () => {
   ];
 
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', width: 400, height: 500 }}> {/* Ensure the height is defined here */}
+    <Box sx={{ display: 'flex', justifyContent: 'center', width: 400, height: 500 }}> 
       <Card sx={{ width: '100%', height: '100%', boxShadow: 'none' }}>
-        <CardContent sx={{ height: '150%' }}> {/* Ensure the height is defined here */}
+        <CardContent sx={{ height: '100%' }}>
           <Box sx={{ width: '100%', height: '100%', boxShadow: 'none', fontSize: 20, justifyContent: 'center', alignItems: 'center' }}>
             <PieChart 
               series={[
@@ -32,7 +32,7 @@ const PieChartComponent = () => {
                   cy: 200,
                 }
               ]}
-              sx={{ height: '150%' }} // Ensure the height is defined here
+              sx={{ height: '100%' }} 
             />
           </Box>
         </CardContent>
