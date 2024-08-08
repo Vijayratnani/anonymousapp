@@ -60,12 +60,12 @@ const Navbar = () =>{
             </div>
          </div>
         {mobileDrawerOpen && (
-            <div className="fixed right-0 z-20 bg-neutral-100 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+            <div className="fixed  z-20 bg-neutral-100 w-full flex flex-col justify-center items-center lg:hidden">
                 <div>
                     {sidebarInfo.map((info,index)=>(
                         <div key={index} className="flex items-center border-b border-neutral-400/80 hover:border-neutral-700 p-4">
                             <img src={info.icon} type="img/png" className="w-9 h-9 sm:h-14 sm:w-14 sm:mr-1 md:w-16 md:h-16"/>
-                            <div className="ml-5">
+                            <div className="ml-2">
                                 <h2 className="text-sm text-customBlue">{info.title}</h2>
                                 <p className="text-xs">{info.text}</p>
                             </div>
