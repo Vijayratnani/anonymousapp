@@ -41,7 +41,7 @@ const Navbar = () =>{
                     </div>
                     <img className="rounded-full w-9 h-9 m-2 lg:ml-10 sm:h-14 sm:w-14 sm:ml-5 lg:h-20 lg:w-20 " src={vijay} alt="" srcSet="" />
                 </div>
-                    <div className="hidden ml-14 space-x-12">
+                    {/* <div className="hidden ml-14 space-x-12">
                         {sidebarInfo.map((info,index)=>(
                             <div key={index} className="flex items-center border-b border-neutral-400/80 hover:border-neutral-700 p-4">
                                 <img src={info.icon} type="img/png" className="w-20 h-20"/>
@@ -51,7 +51,7 @@ const Navbar = () =>{
                                 </div>
                             </div>
                         ))}
-                    </div>
+                    </div> */}
                     <div className="lg:hidden md:flex flex-col flex-end">
                         <button onClick={toggleNavbar}>
                             {mobileDrawerOpen ?<X/>:<MenuIcon/>}
@@ -64,10 +64,10 @@ const Navbar = () =>{
                 <div>
                     {sidebarInfo.map((info,index)=>(
                         <div key={index} className="flex items-center border-b border-neutral-400/80 hover:border-neutral-700 p-4">
-                            <img src={info.icon} type="img/png" className="w-20 h-20"/>
+                            <img src={info.icon} type="img/png" className="w-9 h-9 sm:h-14 sm:w-14 sm:mr-1 md:w-16 md:h-16"/>
                             <div className="ml-5">
-                                <h2 className="text-xl text-customBlue">{info.title}</h2>
-                                <p>{info.text}</p>
+                                <h2 className="text-sm text-customBlue">{info.title}</h2>
+                                <p className="text-xs">{info.text}</p>
                             </div>
                         </div>
                     ))}
