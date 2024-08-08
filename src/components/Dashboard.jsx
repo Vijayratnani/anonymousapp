@@ -76,12 +76,12 @@ const Dashboard = () => {
           <p className='text-xs sm:text-sm lg:text-base'>NO OF MALE AND FEMALE USING THIS APPLICATION</p>
           <div className='flex items-center justify-center flex-wrap h-4/5'>
             <div className="p-2 w-full lg:w-1/2 bg-cover bg-center h-1/3 ">
-                <img src={male} type="img/jpg" alt="Code" className='h-full w-auto border-none
+                <img src={male} type="img/jpg" alt="Code" className='h-full w-full border-none
                 border-r lg:border-dashed border-neutral-500 '/>
                 <p className='text-center m-5 mb-10'>12000 MALE STUDENT</p>
             </div>
             <div className="p-2 w-full h-full lg:w-1/2 bg-cover bg-center ">
-                <img src={female} type="img/jpg" alt="Code" className='h-full w-ato'/>
+                <img src={female} type="img/jpg" alt="Code" className='h-auto w-screen'/>
                 <p className='text-center  m-5'>1000 FEMALE STUDENT</p>
             </div>
           </div>
