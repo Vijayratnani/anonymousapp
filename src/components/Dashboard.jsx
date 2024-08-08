@@ -28,7 +28,7 @@ const Dashboard = () => {
         </div>
         <div>
           <h5 className='text-xl'>YOUR CONCERN STATS</h5>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-1">
             {stats.map((val,index)=>(
               <div key={index} className="flex items-center p-5 m-2 lg:m-5 sm:w-11/12 sm:mr-96
               bg-customBlue bg-opacity-65">
@@ -45,7 +45,7 @@ const Dashboard = () => {
           <h5 className='text-xl'>LEADERSHIP BOARD</h5>
           <p>WHICH DEPARTMENT HAVE BEST PERFORMANCE OVERALL</p>
           <div className='flex items-center flex-wrap'>
-            <div className="p-2 w-full lg:w-1/2 xl:w-fit">
+            <div className="p-2 w-full lg:w-fit xl:w-1/2">
             <LeadershipBoard/>
                 
             </div>
