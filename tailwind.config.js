@@ -13,6 +13,10 @@ export default {
       },
       fontFamily:{
         Julius:"Julius Sans One"
+      },
+      backgroundImage:{
+        'female':"url(assets/female.jpg)",
+        'male':"url(assets/male.jpg)"
       }
     },
   },
