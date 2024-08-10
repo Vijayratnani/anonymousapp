@@ -30,7 +30,7 @@ const Navbar = () =>{
                     </div>
                     <img className="rounded-full mx-1 sm:m-2 w-9 h-9 sm:h-14 sm:w-14 sm:ml-5 lg:h-20 lg:w-20 lg:ml-10" src={uit} alt="" srcSet="" />
                 </div>
-                <div className="lg:hidden md:flex flex-col flex-end">
+                <div className="2xl:hidden md:flex flex-col flex-end">
                         <button onClick={toggleNavbar} className="p-2">
                             {mobileDrawerOpen ?<X/>:<MenuIcon/>}
                         </button>
@@ -49,7 +49,7 @@ const Navbar = () =>{
             </div>
          </div>
         {mobileDrawerOpen && (
-            <div className="fixed z-20 bg-neutral-100 w-full flex flex-col justify-center items-center lg:hidden">
+            <div className="fixed z-20 bg-neutral-100 w-full flex flex-col justify-center items-center 2xl:hidden">
                 <div>
                     {sidebarInfo.map((info,index)=>(
                         <div key={index} className="flex items-center border-b border-neutral-400/80 hover:border-neutral-700 p-4">

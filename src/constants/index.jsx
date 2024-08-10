@@ -19,26 +19,31 @@ import lead6 from "../assets/lead6.jpg";
 
 export const sidebarInfo = [
       {
+        href:"/",
         icon: dashboard,
         title: "DASHBOARD",
         text: "SHOW ALL THE RELAVANT INFORMATION",
       },
       {
+        href:"/public_voice",
         icon: dashboard,
-        title: "DASHBOARD",
-        text: "Show all the relevent information",
+        title: "PUBLIC VOICE",
+        text: "VOICE AROUND UNIVERSITY WHICH CAN UPVOTE",
       },
       {
+        href:"/private_concern",
         icon: privacy,
         title: "PRIVATE CONCERN",
         text: "YOUR PERSONAL PROBLEM NOT VISIBLE TO ANYONE ELSE",
       },
       {
+        href:"create_concern",
         icon: edit_tools,
         title: "CREATE CONCERN",
         text: "CREATE YOUR PRIVATE CONCERN OR PUBLIC VOICE",
       },
       {
+        href:"my_public_voice",
         icon: conference,
         title: "MY PUBLIC VOICE",
         text: "PUBLIC VOICE YOU CAN CREATE WHILE REMAIN ANONYMOUS",
@@ -46,16 +51,16 @@ export const sidebarInfo = [
       
     ];
 
-export const students = [
-  {
-    student1: {
-      firstName:"Vijay",
-      lastName:"Kumar",
-      idNo :"21F-BSCS-30",
-      img: vijay
-    },
-  },
-];
+// export const students = [
+//   {
+//     student1: {
+//       firstName:"Vijay",
+//       lastName:"Kumar",
+//       idNo :"21F-BSCS-30",
+//       img: vijay
+//     },
+//   },
+// ];
 
 export const stats =[
  {
@@ -108,3 +113,16 @@ export const leadsInfo = [
   },
   
 ];
+
+export const publicConcern=[
+  {
+    icon1:"",
+    icon2:"",
+    title1:"STUDENT AFFAIRS",
+    title2:"SOMEONE HAS CREATED CHOAS OUTSIDE THE UNIVERSITY",
+    date:"June-18-2024",
+    number:265,
+    voices:"voices",
+    text:"AS THE SUN DIPPED BELOW THE HORIZON. THE SKY TRANSFORMED INTO A CANVAS OF VIBRANT HUES. PAINTING A MASTERPIECE OF ORANGE, PINK AND PURPLE. THE GENTLE RUSTLING OF LEAVES IN THE EVENING BREEZE CREATED A SOOTHING SYMPHONY ..."
+  }
+]

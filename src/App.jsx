@@ -1,12 +1,13 @@
+import { BrowserRouter } from "react-router-dom"
 import Main from "./screen/Main"
 
 function App() {
 
-  return (<>
+  return (<BrowserRouter>
       <div className="font-Julius">
       <Main/>
       </div>
-      </>
+      </BrowserRouter>
   )
 }
 

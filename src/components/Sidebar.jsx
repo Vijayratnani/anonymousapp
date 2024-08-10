@@ -8,7 +8,7 @@ const Sidebar = () => {
         <div key={index} className="flex items-center border-b border-neutral-400/80 hover:border-neutral-700 p-4">
           <img src={info.icon} type="img/png" className="w-20 h-20"/>
           <div className="ml-5">
-            <h2 className="text-xl text-customBlue">{info.title}</h2>
+            <a href={info.href} className="text-xl text-customBlue">{info.title}</a>
             <p>{info.text}</p>
         </div>
         </div>

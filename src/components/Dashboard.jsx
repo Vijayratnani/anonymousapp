@@ -36,7 +36,7 @@ const Dashboard = () => {
                 p-0 sm:p-1 lg:p-2 xl:p-4 2xl:p-6 bg-neutral-400 rounded-full"/>
                 <div className="ml-5 text-neutral-50 pr-5">
                   <h2 className="sm:text-base lg:text-xl xl:text-2xl 2xl:text-3xl ">{val.number}</h2>
-                  <p className='text-xs sm:text-smlg:text-base'>{val.text}</p>
+                  <p className='text-xs sm:text-sm lg:text-base'>{val.text}</p>
                 </div>
               </div>
             ))}
@@ -81,7 +81,7 @@ const Dashboard = () => {
                 <p className='text-center m-5 mb-10'>12000 MALE STUDENT</p>
             </div>
             <div className="p-2 w-full h-full lg:w-1/2 bg-cover bg-center ">
-                <img src={female} type="img/jpg" alt="Code" className='h-auto w-screen'/>
+                <img src={female} type="img/jpg" alt="Code" className='h-auto w-full'/>
                 <p className='text-center  m-5'>1000 FEMALE STUDENT</p>
             </div>
           </div>
