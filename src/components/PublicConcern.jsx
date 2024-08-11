@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import { publicConcern } from '../constants'
 import { buttonInfo } from '../constants'
 import PopUpPublicConcern from './PopUpPublicConcern'
-import Delete_it from './Delete_it'
-
 
 const PublicConcern = () => {
     const [mobileDrawerOpen,SetmobileDrawerOpen]= useState(false);
@@ -63,7 +61,6 @@ const PublicConcern = () => {
             </div>
         </div>
         <div className='h-screen'>
-        {/* <Delete_it/> */}
         {mobileDrawerOpen && (<PopUpPublicConcern key='index'/>)}
         </div>
     </div>
