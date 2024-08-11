@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { publicConcern } from '../constants'
 import { buttonInfo } from '../constants'
+import PopUpPublicConcern from './PopUpPublicConcern'
+import Delete_it from './Delete_it'
+
+
 const PublicConcern = () => {
+    const [mobileDrawerOpen,SetmobileDrawerOpen]= useState(false);
+
+    const toggleNavbar=()=>{
+        SetmobileDrawerOpen(!mobileDrawerOpen);
+        console.log("toggled!")
+    }
   return (
-    <div className="sm:w-full ml-0 2xl:ml-96 border-l border-neutral-400/80 hover:border-neutral-700">
+    <div className="sm:w-full relative ml-0 2xl:ml-96 pb-5 border-l border-neutral-400/80 hover:border-neutral-700">
         <div className="max-w-6xl mx-auto mt-10 px-6">
             <div className='flex sm: sm:mx-auto justify-between mb-2 pb-2 border-b border-neutral-500 '>
                 <h5 className="text-xl lg:text-2xl tracking-wide ">
@@ -38,16 +48,23 @@ const PublicConcern = () => {
                             <p className='text-ellipsis mt-2'>{info.text}</p>
                         </div>
                         <div className='flex justify-between mt-5'>
-                            {buttonInfo.map((info,index)=>(
-                                <div key={index} className='border border-customGrey4 rounded-md py-1 px-2 shadow-md shadow-customGrey3 drop-shadow-2xl'>
+                            {buttonInfo.map((info,index)=>( 
+                                // <button onClick={toggleNavbar} className="p-2">
+                                //     {mobileDrawerOpen ?<X/>:<MenuIcon/>}
+                                // </button>
+                                <button key={index} onClick={toggleNavbar} className='border border-customGrey4 rounded-md py-1 px-2 shadow-md shadow-customGrey3 drop-shadow-2xl'>
                                     <img src={info.icon} alt="" srcSet="" />
                                     <span>{info.text}</span>
-                                </div>
+                                </button>
                             ))}
                         </div>
                     </div>
                 ))}
             </div>
+        </div>
+        <div className='h-screen'>
+        {/* <Delete_it/> */}
+        {mobileDrawerOpen && (<PopUpPublicConcern key='index'/>)}
         </div>
     </div>
   )
