@@ -47,9 +47,6 @@ const PublicConcern = () => {
                         </div>
                         <div className='flex justify-between mt-5'>
                             {buttonInfo.map((info,index)=>( 
-                                // <button onClick={toggleNavbar} className="p-2">
-                                //     {mobileDrawerOpen ?<X/>:<MenuIcon/>}
-                                // </button>
                                 <button key={index} onClick={toggleNavbar} className='border border-customGrey4 rounded-md py-1 px-2 shadow-md shadow-customGrey3 drop-shadow-2xl'>
                                     <img src={info.icon} alt="" srcSet="" />
                                     <span>{info.text}</span>
