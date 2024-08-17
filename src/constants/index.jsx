@@ -123,7 +123,7 @@ export const publicConcern=[
     date:"June-18-2024",
     number:265,
     voices:"voices",
-    text:"AS THE SUN DIPPED BELOW THE HORIZON. THE SKY TRANSFORMED INTO A CANVAS OF VIBRANT HUES. PAINTING A MASTERPIECE OF ORANGE, PINK AND PURPLE. THE GENTLE RUSTLING OF LEAVES IN THE EVENING BREEZE CREATED A SOOTHING SYMPHONY ...       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi iure, officiis saepe vero tenetur ut laborum at quibusdam magnam, sequi provident? Quos dignissimos facere provident in vitae labore animi distinctio eum omnis fugiat assumenda sint culpa mollitia accusamus totam, magnam dolor ut accusantium velit est reiciendis saepe cumque. At saepe error dolorum. Et temporibus quidem iure dicta officiis magni ipsum amet illo, ratione dolor corrupti itaque esse atque eum totam illum animi sed expedita fuga nesciunt nostrum culpa hic? Odio qui pariatur tenetur similique cupiditate inventore quo quas, fugit ipsum reiciendis nulla eveniet in beatae. Inventore necessitatibus commodi ipsam numquam."
+    text:"AS THE SUN DIPPED BELOW THE HORIZON. THE SKY TRANSFORMED INTO A CANVAS OF VIBRANT HUES. PAINTING A MASTERPIECE OF ORANGE, PINK AND PURPLE. THE GENTLE RUSTLING OF LEAVES IN THE EVENING BREEZE CREATED SOOTHING SYMPHONY ...       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi iure, officiis saepe vero tenetur ut laborum at quibusdam magnam, sequi provident? Quos dignissimos facere provident in vitae labore animi distinctio eum omnis fugiat assumenda sint culpa mollitia accusamus totam, magnam dolor ut accusantium velit est reiciendis saepe cumque. At saepe error dolorum. Et temporibus quidem iure dicta officiis magni ipsum amet illo, ratione dolor corrupti itaque esse atque eum totam illum animi sed expedita fuga nesciunt nostrum culpa hic? Odio qui pariatur tenetur similique cupiditate inventore quo quas, fugit ipsum reiciendis nulla eveniet in beatae. Inventore necessitatibus commodi ipsam numquam."
   },
   {
     icon1:"",
@@ -145,10 +145,4 @@ export const publicConcern=[
     voices:"voices",
     text:"AS THE SUN DIPPED BELOW THE HORIZON. THE SKY TRANSFORMED INTO A CANVAS OF VIBRANT HUES. PAINTING A MASTERPIECE OF ORANGE, PINK AND PURPLE. THE GENTLE RUSTLING OF LEAVES IN THE EVENING BREEZE CREATED A SOOTHING SYMPHONY ..."
   }
-];
-
-export const buttonInfo=[
-  {icon:"",text:"RAISE VOICE"},
-  {icon:"",text:"READ FULL STORY"},
-  {icon:"",text:"RESOUSES"},
 ];
