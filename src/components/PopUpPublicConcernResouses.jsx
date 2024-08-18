@@ -66,10 +66,10 @@ const PopUpPublicConcern = ({key}) => {
                     <img src='' className='text-ellipsis mt-2'/>
                 </div>
                     <div className='flex justify-between mt-5'>
-                        <div className='border bg-customVoilet text-customWhite3 border-customGrey5 py-1 px-2 shadow-md shadow-customGrey3 drop-shadow-2xl'>
+                        <button onClick={showResourses} className='border bg-customVoilet text-customWhite3 border-customGrey5 py-1 px-2 shadow-md shadow-customGrey3 drop-shadow-2xl'>
                             <img src={""} alt="" srcSet="" />
                             <span>Show Resouses</span>
-                        </div>
+                        </button>
                     </div>
                 </div>
             {/* </div> */}
