@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { publicConcern } from '../constants'
 
-const PublicConcern = () => {
+const PrivateConcern = () => {
     const [storyPopUp,SetstoryPopUp]= useState(false);
     const [resousesPopUp,SetresousesPopUp]= useState(false);
 
@@ -154,11 +154,10 @@ const PublicConcern = () => {
                     VIJAY KUMAR
                 </h5>
                 <h5 className="text-base lg:text-xl tracking-wide">
-                    PUBLIC VOICES
+                    PRIVATE CONCERN
                 </h5>
             </div>
             <div className='flex justify-between text-black'>
-                <h5 className='px-4 py-3 bg-customGrey2 rounded-lg'>CATEGORY SHOWING: STUDENT AFFAIRS</h5>
                 <h5 className='px-4 py-3 bg-customGrey2 rounded-lg'>SORTED BY: DATE REPORTED</h5>
             </div>
             <div className='text-black'>
@@ -187,7 +186,7 @@ const PublicConcern = () => {
                             
                             <button className='border border-customGrey4 rounded-md py-1 px-2 shadow-md shadow-customGrey3 drop-shadow-2xl'>
                                 <img src='' alt='Vote img'/>
-                                <p>RAISE VOICE</p>
+                                <p>JOURNEY</p>
                             </button>
                             <button onClick={showStory} className='border border-customGrey4 rounded-md py-1 px-2 shadow-md shadow-customGrey3 drop-shadow-2xl'>
                                 <img src='' alt='Vote img'/>
@@ -207,4 +206,4 @@ const PublicConcern = () => {
   )
 }
 
-export default PublicConcern
+export default PrivateConcern
