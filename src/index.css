@@ -3,6 +3,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom styles for the dropdown */
+.Dropdown-control {
+  @apply bg-transparent rounded-md hover:bg-blue-500 focus:outline-none border-none;
+}
+.Dropdown-menu {
+  @apply bg-white border border-gray-300 rounded shadow-lg;
+}
+.Dropdown-option {
+  @apply px-4 py-2 text-sm text-gray-700 hover:bg-gray-100;
+}
+.Dropdown-option.is-selected {
+  @apply bg-blue-100;
+}
+
+
 
 :root{
     font-family: "Julius Sans One",Arial, Helvetica, sans-serif;
