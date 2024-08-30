@@ -38,7 +38,10 @@ const PublicConcern = () => {
         <div className='ml-0'>
         {storyPopUp && (<>
             <div className='relative ml-0 mt-0'>        
-                <div className="fixed overflow-x-auto h-2/3 transform -translate-x-60 -translate-y-0 bg-customWhite2 p-6 rounded z-50">
+            <div className="fixed overflow-x-auto h-2/3 shadow-lg mx-auto transform  
+                bg-customWhite2 p-6 rounded z-50    
+                  2xl:-translate-x-60 xl:-translate-x-0 -translate-y-0 mr-10"
+                >
                     <div>
                         {/* WILL IMPLIMENT IT LATER */}
                         {/* {publicConcern.map((info)=>(
@@ -100,7 +103,10 @@ const PublicConcern = () => {
     </>
     )}
     {resousesPopUp && (<div className='relative ml-0 mt-0'>
-        <div className="fixed transform -translate-x-60 -translate-y-0 bg-customWhite2 p-6 rounded z-50">
+        <div className="fixed overflow-x-auto h-2/3 shadow-lg mx-auto transform  
+                bg-customWhite2 p-6 rounded z-50    
+                  2xl:-translate-x-60 xl:-translate-x-0 -translate-y-0 mr-10"
+                >
             <div>
             {/* WILL IMPLIMENT IT LATER */}
             {/* {publicConcern.map((info)=>(
