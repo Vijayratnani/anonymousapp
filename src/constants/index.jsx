@@ -1,5 +1,5 @@
 import dashboard from "../assets/dashboard.png";
-// import privacy from "../assets/privacy.png";
+import megaphone from "../assets/megaphone.png";
 import privacy from "../assets/privacy.png";
 import edit_tools from "../assets/edit_tools.png";
 import conference from "../assets/conference.png";
@@ -26,7 +26,7 @@ export const sidebarInfo = [
       },
       {
         href:"/public_voice",
-        icon: dashboard,
+        icon: megaphone,
         title: "PUBLIC VOICE",
         text: "VOICE AROUND UNIVERSITY WHICH CAN UPVOTE",
       },

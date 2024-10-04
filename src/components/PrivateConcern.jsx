@@ -5,6 +5,12 @@ import { publicConcern } from '../constants'
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 
+import journey from '../assets/journey.jpg';
+import read_story from '../assets/read_story.png';
+import resources from '../assets/resources.png';
+import girl_boy from '../assets/girl_boy.png';
+
+
 const PrivateConcern = () => {
     const [storyPopUp,SetstoryPopUp]= useState(false);
     const [resousesPopUp,SetresousesPopUp]= useState(false);
@@ -73,7 +79,7 @@ const PrivateConcern = () => {
 
                 <div className='flex justify-between '>
                     <div className='flex'>
-                        <img src={""} alt="" srcSet="" />
+                        <img src={girl_boy} alt="" srcSet="" className='h- w-' />
                         <div className='text-lg'>
                             <h5>STUDENT AFFAIRS</h5>
                             <div>June-18-2024</div>
@@ -86,7 +92,7 @@ const PrivateConcern = () => {
                 </div>
                     <div className='flex justify-between mt-5'>
                         <button onClick={showResourses} className='border bg-customVoilet text-customWhite3 border-customGrey5 py-1 px-2 shadow-md shadow-customGrey3 drop-shadow-2xl'>
-                            <img src={""} alt="" srcSet="" />
+                            <img src={resources} alt="" srcSet="" />
                             <span>Show Resouses</span>
                         </button>
                     </div>
@@ -132,7 +138,7 @@ const PrivateConcern = () => {
             {/* <div  className='bg-customWhite opacity-95 mt-10 shadow-lg h-1/3 shadow-customGrey4 rounded-md py-5 px-3'> */}
                 <div className='flex justify-between '>
                     <div className='flex'>
-                        <img src={""} alt="" srcSet="" />
+                        <img src={girl_boy} alt="" srcSet="" />
                         <div className='text-lg'>
                             <h5>STUDENT AFFAIRS</h5>
                             <div>June-18-2024</div>
@@ -145,7 +151,7 @@ const PrivateConcern = () => {
                 </div>
                     <div className='flex justify-between mt-5'>
                         <button onClick={showStory} className='border bg-customVoilet text-customWhite3 border-customGrey5 py-1 px-2 shadow-md shadow-customGrey3 drop-shadow-2xl'>
-                            <img src={""} alt="" srcSet="" />
+                            <img src={read_story} alt="" srcSet="" />
                             <span>SHOW STORY</span>
                         </button>
                     </div>
@@ -175,8 +181,8 @@ const PrivateConcern = () => {
                 {publicConcern.map((info,index)=>(
                     <div key={index} className='bg-customWhite opacity-95 mt-10 shadow-lg h-1/3 shadow-customGrey4 rounded-md py-5 px-3'>
                         <div className='flex justify-between '>
-                            <div className='flex'>
-                                <img src={info.icon1} alt="" srcSet="" />
+                            <div className='flex items-center'>
+                                <img src={girl_boy} alt="" srcSet="" className='object-contain h-20'/>
                                 <div className='text-lg'>
                                     <h5>{info.title1}</h5>
                                     <div>{info.date}</div>
@@ -191,16 +197,16 @@ const PrivateConcern = () => {
                             </p>
                         </div>
                         <div className='flex justify-between mt-5'>
-                            <button onClick={showStory} className='border border-customGrey4 rounded-md py-1 px-2 shadow-md shadow-customGrey3 drop-shadow-2xl'>
-                                <img src='' alt='Journey img'/>
+                            <button onClick={showStory} className='flex items-center border border-customGrey4 rounded-md py-1 px-2 shadow-md shadow-customGrey3 drop-shadow-2xl'>
+                                <img src={journey} alt='Journey img' className='pr-2 w-10'/>
                                 <p>JOURNEY</p>
                             </button>
-                            <button onClick={showStory} className='border border-customGrey4 rounded-md py-1 px-2 shadow-md shadow-customGrey3 drop-shadow-2xl'>
-                                <img src='' alt='Vote img'/>
+                            <button onClick={showStory} className='flex items-center border border-customGrey4 rounded-md py-1 px-2 shadow-md shadow-customGrey3 drop-shadow-2xl'>
+                                <img src={read_story} alt='Vote img' className='pr-2 w-10'/>
                                 <p>READ FULL STORY</p>
                             </button>
-                            <button onClick={showResourses} className='border flex border-customGrey4 rounded-md py-1 px-2 shadow-md shadow-customGrey3 drop-shadow-2xl'>
-                                <img src='' alt='Vote img'/>
+                            <button onClick={showResourses} className='flex items-center border border-customGrey4 rounded-md py-1 px-2 shadow-md shadow-customGrey3 drop-shadow-2xl'>
+                                <img src={resources} alt='Vote img' className='pr-2 w-8'/>
                                 <span>RESOUSES</span>
                             </button>
                         </div>
